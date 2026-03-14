@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<cloudPath
+		windows="%ONEDRIVE%\Projects\Astro\Portfolio\"
+		unix="%HOME%/OneDrive/Projects/Astro/Portfolio/"
+		/>
+
+	<localPath
+		windows="C:\Projects\Astro\Portfolio\"
+		unix="%HOME%/Projects/Astro/Portfolio/"
+		/>
+
+	<exclusion
+		directories=".idea|.astro|node_modules"
+		files=".DS_Store"
+		/>
+</root>
