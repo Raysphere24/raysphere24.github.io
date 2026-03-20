@@ -1,11 +1,70 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const title = "Kazuma Tateiri";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>{title}</title>
+
+	<!-- OGP -->
+	<meta property="og:title" content={title} />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.simplexlaboratory.com" />
+</head>
+
+<body style="font-family: system-ui; padding: 2rem;">
+<h1>Kazuma Tateiri</h1>
+<p>Researcher / Software Engineer</p>
+<p style="color: blue">This page is under construction</p>
+
+<!--<h2>About</h2>-->
+<!--<p>I have been studying algorithms for computing geodesics on triangular meshes.</p>-->
+
+<h2>Publications</h2>
+<ul>
+	<li>
+		Kazuma Tateiri, Toru Ohmoto, “An Extended MMP Algorithm: Wavefront and Cut-Locus on a
+		Convex Polyhedron,” International Journal of Computational Geometry & Applications, Vol.31,
+		No.04, pp.221-247, doi:10.1142/S0218195922500029, July 2022.
+	</li>
+	<li>
+		Kazuma Tateiri, “Efficient Exact Enumeration of Single-Source Geodesics on a Non-Convex
+		Polyhedron,” International Journal of Computational Geometry & Applications, Vol.33, No.03n04,
+		pp.97-132, doi:10.1142/S0218195923500048, December 2023
+	</li>
+</ul>
+
+<h2>Presentations</h2>
+<ul>
+	<li>
+		Kazuma Tateiri, Geodesics on a Polyhedron, 2019 Summer International Symposium on Big-Data,
+		Cybersecurity and IoT, Student Session, No.2, 北海道大学百年記念会館, 札幌市, 2019年8月9日
+	</li>
+	<li>
+		Kazuma Tateiri, Algorithms for Enumerating Geodesics on a Polyhedron, 2019 Winter International
+		Symposium on Big-Data, Cybersecurity and IoT, Student Session, No.9, 北海道大学知識メディアラボラトリー,
+		札幌市, 2019年12月6日
+	</li>
+	<li>
+		舘入数磨, 凸多面体上の Cut Locus の計算アルゴリズムについて, 直観幾何学 2021,
+		Zoom開催, 2021年3月6日
+	</li>
+	<li>
+		舘入数磨, Efficient computation of cut-loci of triangular meshes (三角形メッシュの最小跡の効率的な計算),
+		トポロジーとコンピュータ 2024, 横浜国立大学, 横浜市, 2024年9月17日
+	</li>
+	<li>
+		舘入数磨, 多面体上における測地線と最小跡の効率的な計算,
+		直観幾何学 2025, 椙山女学園大学, 名古屋市, 2025年3月1日
+	</li>
+</ul>
+
+<h2>Links</h2>
+<ul>
+	<li><a href="https://github.com/Raysphere24">GitHub</a></li>
+	<li><a href="mailto:kazuma.tateiri16@gmail.com">Email</a></li>
+</ul>
+</body>
+</html>
